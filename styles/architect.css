@@ -21,7 +21,8 @@
 /* header styles */
 header{
     background: rgba(255, 144, 14, 0.10);
-    padding: 30px 240px;
+    padding: 30px 150px;
+    /* padding: 30px 240px; */
 }
 nav{
     display: flex;
@@ -85,4 +86,40 @@ nav a{
     nav{
         flex-direction: column;
     }
+}
+/* main styles */
+main{
+    /* max-width: 1440px; eita mile nai, tai nicher ta dilam*/
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* teams styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.teams-content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.teams-title{
+    font-size: 2.5rem;
+}
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .teams-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    color: #727272;
 }
