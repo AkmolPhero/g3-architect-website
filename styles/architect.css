@@ -113,9 +113,9 @@ main{
     padding-left: 20px;
 }
 .feature-img img{
-    /* width: 100%; */
     width: 500px;
     height: 90%;
+    margin-left: 80px;
 }
 .features .card{
     background-color: #FFF;
@@ -128,22 +128,19 @@ main{
     border-radius: 8px;
     background-color: #FF900E;
     color: #FFF;
-    width: 300px;
+    width: 270px;
     padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 .ten-years-badge h2{
-    /* font-size: 4rem; */
+    margin: 0;
     font-size: 50px;
-    font-weight: 600;
 }
-/* .feature-img .btn-primary{
-    padding: 40px 30px;
-    margin-bottom: 100px;
-} */
-/* .feature-img .year{
-    
-    display: flex;
-} */
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
 
 /* facts section styles */
 .facts-card-container{
@@ -156,7 +153,6 @@ main{
     border-radius: 8px;
     text-align: center;
     padding: 30px;
-    /* margin-left: 50px; */
 }
 
 .facts-card-container .card-states{
@@ -188,6 +184,14 @@ main{
     width: 130px;
 }
 
+/* footer styles */
+footer{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 10px;
+    text-align: center;
+    margin: 150px;
+}
+
 
 /* responsive styles */
 
@@ -196,7 +200,7 @@ main{
     header{
         padding: 20px;
     }
-    nav,.facts-card-container, .sponsors-img-container{
+    nav, .features, .facts-card-container, .sponsors-img-container{
         flex-direction: column;
     }
     .teams-container{
@@ -204,6 +208,15 @@ main{
     }
     .teams-img-container{
         grid-template-columns: 1fr;
+    }
+    
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        max-width: 300px;
+        position: static;
     }
     .facts-card-container{
         gap: 20px;
@@ -217,7 +230,7 @@ main{
     header{
         padding: 40px;
     }
-    nav, .teams-container, .facts-card-container, .sponsors-img-container{
+    nav, .features, .teams-container, .facts-card-container, .sponsors-img-container{
         flex-direction: column;
     }
     .facts-card-container{
