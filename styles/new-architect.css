@@ -22,7 +22,7 @@
 
 /* header styles */
 header{
-    padding: 50px 180px;
+    padding: 50px 150px;
 }
 nav{
     display: flex;
@@ -32,7 +32,7 @@ nav{
 .nav-title{
     /* font-size: 2.8rem;
     font-weight: 700; */
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #131313;
 }
@@ -69,3 +69,42 @@ nav a{
 .banner img{
     width: 100%;
 }
+
+/* main styles */
+main{
+    max-width: 1050px;
+    margin: 50px auto;
+}
+
+/* teams section stlyes */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.teams-content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.teams-title{  
+    /* font-size: 2.5rem;
+    font-weight: 700; */
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+    /* font-weight: 500; */
+}
+.teams-title .feature{
+    color: #FF900E;
+    font-weight: 700;
+    /* font-weight: 700; */
+}
+
+/* features section styles */
