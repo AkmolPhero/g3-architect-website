@@ -4,9 +4,19 @@
 *{
     font-family: "Work Sans", sans-serif;
 }
+
+.section-title{
+    /* font-size: 2.8rem;
+    font-weight: 700; */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+
 .text-light-gray{
     color: #727272;
 }
+
 .btn-primary{
     color: #FFFFFF;
     background: #FF900E;
@@ -19,18 +29,12 @@
     border: none;
     margin-bottom: 20px;
 }
-.section-title{
-    /* font-size: 2.8rem;
-    font-weight: 700; */
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #131313;
-}
 
 /* header styles */
 header{
     padding: 50px 150px;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -40,18 +44,21 @@ nav{
 nav ul{
     display: flex;
 }
+
 nav li{
     list-style: none;
-    padding-right: 50px;
+    margin-right: 50px;
     font-size: 1rem;
     font-weight: 500;
     /* font-size: 1rem;
     font-weight: 500; */
 }
+
 nav a{
     text-decoration: none;
     color: #424242;
 }
+
 /* banner styles */
 
 .banner-content{
@@ -61,12 +68,14 @@ nav a{
     margin: 0 auto;
     text-align: center;
 }
+
 .banner-title{
     font-weight: 700;
     font-size: 4rem;
     /* font-weight: 700;
     font-size: 4rem; */
 }
+
 .banner img{
     width: 100%;
 }
@@ -82,26 +91,31 @@ main{
     display: flex;
     align-items: center;
 }
+
 .teams-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
+
 .teams-content{
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .teams-title{  
     /* font-size: 2.5rem;
     font-weight: 700; */
     font-size: 2.5rem;
     font-weight: 700;
 }
+
 .teams-title .quick-list{
     color: #727272;
     font-weight: 500;
     /* font-weight: 500; */
 }
+
 .teams-title .teams-feature{
     color: #FF900E;
     font-weight: 700;
@@ -114,10 +128,12 @@ main{
     gap: 30px;
     margin-top: 100px;
 }
+
 .features-content .section-title{
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
+
 .features-content .card{
     /* eita full copy marsi  */
     background-color: #FFF;
@@ -126,11 +142,13 @@ main{
     padding: 20px;
     margin-bottom: 20px;
 }
+
 .features-img img{
     width: 550px;
     height: 90%;
     margin-left: 50px;
 }
+
 .ten-years-badge{
     /* eitar onek kichu copy marsi */
     color: #FFFFFF;
@@ -143,13 +161,16 @@ main{
     position: relative;
     bottom: 100px;
 }
+
 .ten-years-badge h3{
     font-size: 3rem;
     margin: 0;
 }
+
 .ten-years-badge p{
     font-size: 1.5rem;
 }
+
 
 /* facts section styles */
 .facts-card-container{
@@ -157,12 +178,14 @@ main{
     justify-content: space-around;
     gap: 20px;
 }
+
 .facts-card-container .card{
     border: 1px solid #FF900E;
     border-radius: 8px;
     text-align: center;
     padding: 30px;
 }
+
 .card .card-statess{
     font-size: 2.5rem;
     color: #424242;
@@ -171,14 +194,18 @@ main{
     /* margin-top: 10px;
     margin-bottom: 10px; */
 }
+
 .card .card-title{
     font-size: 1rem;
+    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 /* sponsors section styles */
 .sponsors{
     text-align: center;
 }
+
 .sponsors-img-container{
     margin-top: 50px;
     display: flex;
@@ -188,19 +215,27 @@ main{
     /* align-items: center; */
     /* gap: 30px; */
 }
+
 .sponsors-img-container img{
-    width: 120px;
+    width: 130px;
 }
 
-
+/* footer styles */
+footer{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 10px;
+    text-align: center;
+    margin: 150px;
+}
 
 /* responsive styles */
+
 /* small devices */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav, .teams-container, .features, .facts-card-container, .sponsors-img-container{
+    nav, .features, .facts-card-container, .sponsors-img-container{
         flex-direction: column;
     }
     .teams-container{
@@ -215,6 +250,9 @@ main{
     }
     .facts{
         margin-left: 20px;
+    }
+    footer{
+        margin: 50px;
     }
 }
 
